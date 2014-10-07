@@ -1,10 +1,100 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <title>Start Page</title>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    </head>
-    <body>
-        <h1>Hello World!</h1>
-    </body>
+<!doctype html>
+<!--[if lte IE 7]> <html class="no-js ie67 ie678" lang="fr"> <![endif]-->
+<!--[if IE 8]> <html class="no-js ie8 ie678" lang="fr"> <![endif]-->
+<!--[if IE 9]> <html class="no-js ie9" lang="fr"> <![endif]-->
+<!--[if gt IE 9]> <!--><html class="no-js" lang="fr"> <!--<![endif]-->
+<head>
+		<meta charset="UTF-8">
+		<!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge"><![endif]-->
+		<title>Punching web app</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<!--[if lt IE 9]>
+		<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+</head>
+<body>
+
+    <div class="reformed-form">
+        <form method="post" name="PunchingComment" id="PunchingComment" action="/" enctype="multipart/form-data">
+            <dl>
+                <dt>
+                <label for="tfId">tfLabel</label>
+                </dt>
+                <dd><input type="text" id="tfId" class="tfClass" name="tfName" value="defaultValue" /></dd>
+            </dl>
+            <dl>
+                <dt>
+                <label for="pId">pLabel</label>
+                </dt>
+                <dd><input type="password" id="pId" class="pClass" name="pName" value="password" /></dd>
+            </dl>
+            <dl>
+                <dt>
+                <label for="aId">aLabel</label>
+                </dt>
+                <dd><textarea id="aId" class="aClass" name="aName" rows="5" cols="50">
+                    </textarea></dd>
+            </dl>
+            <dl>
+                <dt>
+                <label for="dlId">dlName</label>
+                </dt>
+                <dd><input type="file" id="dlId" class="dlClass" name="dlName" /></dd>
+            </dl>
+            <dl>
+                <dt>
+                <label for="sId">sLabel</label>
+                </dt>
+                <dd>
+                    <select size="1" name="sName" id="sId" class="sClass">
+                        <option value="option1">option1</option>
+                        <option value="option2">option2</option>
+                        <option value="option3">option3</option>
+                    </select>
+                </dd>
+            </dl>
+            <dl>
+                <dt>
+                <label for="rId">rLabel</label>
+                </dt>
+                <dd>
+                    <ul>
+                        <li><input type="radio" class="rClass" id="rId" name="rName" value="radio1" />
+                            <label>radio1</label>
+                        </li>
+                        <li><input type="radio" class="rClass" id="rId" name="rName" value="radio2" />
+                            <label>radio2</label>
+                        </li>
+                        <li><input type="radio" class="rClass" id="rId" name="rName" value="radio3" />
+                            <label>radio3</label>
+                        </li>
+                    </ul>
+                </dd>
+            </dl>
+            <dl>
+                <dt>
+                <label for="cId">cLabel</label>
+                </dt>
+                <dd>
+                    <ul>
+                        <li><input type="checkbox" class="cClass" id="cId" name="cName[]" value="check1" />
+                            <label>check1</label>
+                        </li>
+                        <li><input type="checkbox" class="cClass" id="cId" name="cName[]" value="check2" />
+                            <label>check2</label>
+                        </li>
+                        <li><input type="checkbox" class="cClass" id="cId" name="cName[]" value="check3" />
+                            <label>check3</label>
+                        </li>
+                    </ul>
+                </dd>
+            </dl>
+            <div id="submit_buttons">
+                <button type="reset">Reset</button>
+                <button type="submit">Submit</button>
+            </div>
+        </form>
+    </div>
+
+</body>
 </html>
