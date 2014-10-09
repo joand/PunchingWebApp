@@ -1,5 +1,5 @@
 /*
-PostgreSQL script
+PostgreSQL 
 */
 
 create table IF NOT EXISTS checkboxField (
